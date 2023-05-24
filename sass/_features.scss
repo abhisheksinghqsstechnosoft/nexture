@@ -1,0 +1,35 @@
+.features {
+  height: 100%;
+  //   background-color: $color-grey-light-2;
+  grid-column: center-start/center-end;
+  //   grid-column: 2/6;
+
+  margin: 5rem 10rem 5rem 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.feature {
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+  }
+  //   &__container {
+  //     display: flex;
+  //   }
+}
